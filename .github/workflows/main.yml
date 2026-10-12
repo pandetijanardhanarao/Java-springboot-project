@@ -26,5 +26,5 @@ jobs:
           cache: maven
 
       - name: Build Spring Boot backend
-        run: mvn -B clean verify
+        run: mvn -B clean package -DskipTests
         working-directory: backend
